@@ -35,16 +35,8 @@ void Clear_Display(void);
 int main(void)
 {
 	MTIMER0_voidInitialize();
-	MDIO_voidSetPortDirection(PORTD, OUTPUT);
-	MDIO_voidSetPortDirection(PORTC, OUTPUT);
-
-	while(1)
-	{
-		MDIO_voidSetPortValue(PORTD, HIGH);
-		MDIO_voidSetPortValue(PORTC, HIGH);
-	}
-
-
+	
+	
 	u8 HallSensor_Value, Clock_Position, Counter = 0;
 
 	/*PIN for Hall Sensor*/
