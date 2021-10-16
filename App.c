@@ -35,8 +35,6 @@ void Clear_Display(void);
 int main(void)
 {
 	MTIMER0_voidInitialize();
-	
-	
 	u8 HallSensor_Value, Clock_Position, Counter = 0;
 
 	/*PIN for Hall Sensor*/
@@ -51,7 +49,7 @@ int main(void)
 
 	while(1)
 	{
-		HLED_voidTurnOn(PIN7, PORTB);
+		Frame_Display();
 		MADC_syncvoidReadvalue(ADC0, &HallSensor_Value);
 		while(HallSensor_Value == LOW)
 		{
