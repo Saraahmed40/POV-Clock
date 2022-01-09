@@ -9,9 +9,9 @@ void MDIO_voidSetPortDirection(u8 copy_u8PortId, u8 copy_u8PortDirection)
 	switch(copy_u8PortId)
 	{
 		case PORTA:
-        if(copy_u8PortDirection  == OUTPUT)
+        	if(copy_u8PortDirection  == OUTPUT)
 		{
-		DDRA_REG=0xff;
+			DDRA_REG=0xff;
 		}
 		else if(copy_u8PortDirection  == INPUT){
 			DDRA_REG=0;
@@ -24,7 +24,7 @@ void MDIO_voidSetPortDirection(u8 copy_u8PortId, u8 copy_u8PortDirection)
 		case PORTB: 
 		  if(copy_u8PortDirection  == OUTPUT)
 		{
-		DDRB_REG=0xff;
+			DDRB_REG=0xff;
 		}
 		else if((copy_u8PortDirection  == INPUT)){
 			DDRB_REG=0;
@@ -37,7 +37,7 @@ void MDIO_voidSetPortDirection(u8 copy_u8PortId, u8 copy_u8PortDirection)
 		case PORTC: 
 		  if(copy_u8PortDirection  == OUTPUT)
 		{
-		DDRC_REG=0xff;
+			DDRC_REG=0xff;
 		}
 		else if((copy_u8PortDirection  == INPUT)){
 			DDRC_REG=0;
@@ -50,7 +50,7 @@ void MDIO_voidSetPortDirection(u8 copy_u8PortId, u8 copy_u8PortDirection)
 		case PORTD: 
 		  if(copy_u8PortDirection  == OUTPUT)
 		{
-		DDRD_REG=0xff;
+			DDRD_REG=0xff;
 		}
 		else if(copy_u8PortDirection  == INPUT){
 			DDRD_REG=0;
@@ -78,7 +78,7 @@ void MDIO_voidSetPortValue(u8 copy_u8PortId,u8 copy_u8PortValue)
 			PORTA_REG=0;
 		}
 		else {
-             PORTA_REG=copy_u8PortValue;
+            		 PORTA_REG=copy_u8PortValue;
 		}
 		break;
 		
